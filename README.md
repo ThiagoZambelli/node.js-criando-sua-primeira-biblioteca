@@ -96,6 +96,9 @@
   - [Link para a documentação das Expressões Regulares](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions)
   - [Site Regex101, para ajudar na criação de Expressões Regulares](https://regex101.com/)
 
+## cli.js:
+> Utilizamos um arquico `cli.js` com uma constante com o valor `process.argv` que por sua vez pega os caminhos do terminal. Isso somado a exportação da nossa função faz com que possamos dar via comando de terminal o texto no qual queremos executar o codigo.
+
 ---
 
 &nbsp;
