@@ -41,12 +41,46 @@
 
 # Projeto -> <div id='projeto'>
 
+&nbsp;
+
 ## Biclioteca ` Chalk`:
 > Neste projeto começamos com a intslação e utilização da bibliotrca Chalk que pode ser utilizada para controle de formatação e cores aprensentadas pelos que é exibido no `console`
 
+## Assincronicidade:
+> Quando lidamos com JS é comum a utilização de funçoes assincronas para resolução de problemas, pois o JS por si só é sincrono, ou seja, ele resolve uma coisa por vez. Por tanto, utilizamos das funções assincronas, para que esperemos a resolução de alguma coisa mas o codigo continue sendo executado enquanto isso. existem duas formas mais comun de fazer isso:
+  - async/await ->
+  ~~~JavaScript
+  async function pegaArquivo(caminhoDoArquivo) {
+      try {
+          const encodin = 'utf-8';
+          const texto = await fs.promises.readFile(caminhoDoArquivo, encodin);
+          console.log(chalk.green(texto));
+      }catch(erro){
+          trataErro(erro)
+      }
+  }
+  ~~~
+
+  - .then ->
+  ~~~JavaScript
+  const pegaArquivo = (caminhoDoArquivo) => {
+      const encodin = 'utf-8';
+      fs.promises
+      .readFile(caminhoDoArquivo, encodin)
+      .then(texto => console.log(chalk.green(texto)))
+      .catch(trataErro)
+  }
+  ~~~
+
+> Onde ambas funcinam de forma similar e com o mesmo desempenho mas o .then encadeia a função e o async/await se parece mais com uma função normal JS.
+
 ---
 
+&nbsp;
+
 # Problemas e Soluções -> <div id='problemas__solucoes'>
+
+&nbsp;
 
 
 ## Import vs require:
@@ -57,7 +91,13 @@
 ## `.gitignore`:
 > O arquivo `gitignore` diz para o git quais arquivos devem ser ignorados na hora de mandar o projeto para o git. Utilizamos isso para o `node_module` pois a pasta e grande e iremos utilizala apenas em tempo de desenvolvimento, e por ter as bibliotecas descritas no `packege.json` as mesmas serão baixadas na instalação do npm.
 
+---
+
+&nbsp;
+
 # Aulas -> <div id='aulas'>
+
+&nbsp;
 
 ## Aula 1:
 
@@ -65,3 +105,9 @@
 - Que o arquivo package.json é utilizado pelo Node.js para listar as dependências instaladas, além de informações sobre versão do programa, autoria e scripts;
 - Que as dependências (também chamadas de libs ou bibliotecas) são pacotes de código pronto que outras pessoas da comunidade disponibilizam, e nós as utilizamos para executar tarefas específicas no código sem termos que reescrever do zero;
 - Que para deixar o código mais organizado podemos usar ferramentas de linting, além da importância delas para reforçar estilo e também para prever possíveis bugs.
+
+## Aula 2:
+
+- Que podemos utilizar a lib fs (File System, ou sistema de arquivos) nativa do JavaScript para que o programa consiga acessar e ler arquivos do computador;
+- Que conseguimos capturar mensagens de erro enviadas pelo Node.js quando algo no programa não sai como o esperado utilizando a palavra-chave throw, ou lançar;
+- Que as “promessas” são a forma que o JavaScript utiliza para trabalhar com código assíncrono e que podemos resolvê-las utilizando em conjunto as palavras-chave async e await ou o método .then().
