@@ -91,6 +91,11 @@
 ## `.gitignore`:
 > O arquivo `gitignore` diz para o git quais arquivos devem ser ignorados na hora de mandar o projeto para o git. Utilizamos isso para o `node_module` pois a pasta e grande e iremos utilizala apenas em tempo de desenvolvimento, e por ter as bibliotecas descritas no `packege.json` as mesmas serão baixadas na instalação do npm.
 
+## Expressões Regulares:
+> Neste projeto queremos indentificar e analisar linkes de um arquivo `.md`, e links nos arquivos com essa extensão tem uma configuração muito especifica. Por tanto, iremos utilizar Expressões Regulares que tem por objetivo gerar padrões para pegar combinações expecificas em arquivos de texto.
+  - [Link para a documentação das Expressões Regulares](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions)
+  - [Site Regex101, para ajudar na criação de Expressões Regulares](https://regex101.com/)
+
 ---
 
 &nbsp;
@@ -111,3 +116,9 @@
 - Que podemos utilizar a lib fs (File System, ou sistema de arquivos) nativa do JavaScript para que o programa consiga acessar e ler arquivos do computador;
 - Que conseguimos capturar mensagens de erro enviadas pelo Node.js quando algo no programa não sai como o esperado utilizando a palavra-chave throw, ou lançar;
 - Que as “promessas” são a forma que o JavaScript utiliza para trabalhar com código assíncrono e que podemos resolvê-las utilizando em conjunto as palavras-chave async e await ou o método .then().
+
+## Aula 3:
+
+- Como utilizar expressões regulares, uma sintaxe feita para reconhecer padrões de texto, para capturar links e URLs;
+- Como utilizamos classes e grupos de expressões regulares para refinar a busca por estes padrões, além dos métodos que o JavaScript tem (por exemplo match e exec) para trazer os resultados e trabalhar com eles;
+- Manipular os resultados extraídos do texto através de expressões regulares e montar um objeto de retorno utilizando a sintaxe do JavaScript e desestruturação de objetos com o spread operator ....
