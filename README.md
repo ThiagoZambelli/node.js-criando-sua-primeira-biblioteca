@@ -54,7 +54,7 @@
  
 ---
 
-## Somario:
+## Sumário:
 - [Projeto](#projeto)
 - [Problemas e Soluções](#problemas__solucoes)
 - [Aulas](#aulas)
@@ -67,7 +67,7 @@
 &nbsp;
 
 
-## Biclioteca ` Chalk`:
+## Biclioteca `Chalk`:
 > Neste projeto começamos com a intslação e utilização da bibliotrca Chalk que pode ser utilizada para controle de formatação e cores aprensentadas pelos que é exibido no `console`
 
 ## Assincronicidade:
