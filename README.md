@@ -43,6 +43,7 @@
 
 &nbsp;
 
+
 ## Biclioteca ` Chalk`:
 > Neste projeto começamos com a intslação e utilização da bibliotrca Chalk que pode ser utilizada para controle de formatação e cores aprensentadas pelos que é exibido no `console`
 
@@ -73,6 +74,44 @@
   ~~~
 
 > Onde ambas funcinam de forma similar e com o mesmo desempenho mas o .then encadeia a função e o async/await se parece mais com uma função normal JS.
+
+## Script:
+> Dentro do `package.json`, criamos um script para que quando fosse rodado no terminal nós precisacessos apenas rodar o script e dar o caminho do arquivo.
+- > E.X: 
+    `npm run nomeDoScript CaminhoASerExecutado`
+
+    
+## Lidando com erros:
+
+> Uma lista com alguns dos erros mais comuns que podem aparecer.
+
+`ENOTFOUND`
+- Error: not found - Retorna quando o Node.js tenta estabelecer uma conexão com um servidor e a tentativa falha no DNS lookup; ou seja, ou o host não existe ou há algum erro no endereço fornecido, que não consegue ser resolvido pelo DNS.
+
+- >Algumas das soluções possíveis: verifique se a URL fornecida realmente existe e se a string com a URL está sendo fornecida da forma correta para a função ou método que fará a conexão.
+
+`ENOENT`
+- Error: no entity - Como vimos no curso, muitas vezes acontece quando um caminho especificado, seja um diretório ou um arquivo, não existe no sistema de arquivos. Neste caso, temos que verificar se o caminho fornecido está correto.
+
+- >Importante: algumas operações com fs requerem o uso do caminho absoluto de um arquivo ou diretório. Para “montar” a string com estes caminhos, você pode utilizar uma das libs mais comuns do Node.js, a path.
+
+`EISDIR`
+- Error: is a directory - O caminho fornecido é um diretório. Normalmente vemos este erro quando o programa esperava receber um caminho de um arquivo, mas ao invés disso recebeu um diretório. Novamente, devemos verificar a string recebida pela função ou método para conferir se está completa e montada da forma correta.
+
+`ENOTDIR`
+- Error: not a directory - é o contrário do erro anterior, quando o programa espera receber o caminho de um diretório mas recebe o caminho de um arquivo.
+
+`EADDRINUSE`
+- Error: address already in use - Muitas vezes este erro acontece quando estamos iniciando ou reiniciando um servidor web. Ele indica que o servidor está tentando se conectar a uma porta lógica que já está sendo ocupada por outro programa.
+
+
+`ECONNREFUSED`
+- Error: connection refused - Houve uma tentativa de envio de requisição a um endpoint, porém a conexão foi recusada. Normalmente é causada por inatividade do serviço que está sendo requisitado.
+
+`ECONNRESET`
+- Error: connection reset - Uma conexão em andamento foi fechada durante o processo de requisição-resposta, antes que a resposta fosse recebida. Pode ser causada por um timeout ou reinício do servidor.
+
+### > A lista completa de erros pode ser conferida aqui, direto na [documentação do Node.js](https://nodejs.org/api/errors.html).
 
 ---
 
@@ -125,3 +164,11 @@
 - Como utilizar expressões regulares, uma sintaxe feita para reconhecer padrões de texto, para capturar links e URLs;
 - Como utilizamos classes e grupos de expressões regulares para refinar a busca por estes padrões, além dos métodos que o JavaScript tem (por exemplo match e exec) para trazer os resultados e trabalhar com eles;
 - Manipular os resultados extraídos do texto através de expressões regulares e montar um objeto de retorno utilizando a sintaxe do JavaScript e desestruturação de objetos com o spread operator ....
+
+## Aula 4:
+
+- A utilizar a interface de linha de comando e como aplicamos a lib process do Node.js para capturar e utilizar os dados informados no terminal em nosso código;
+- A organizar o código separando em arquivos as funções que lidam com entrada e saída de dados das funções que processam os links;
+- Como fazer estes diversos arquivos conversarem entre si através da exportação e importação de módulos com import e export;
+- Que scripts são instruções que usamos para automatizar tarefas e como escrever nossos próprios scripts, incluí-los no arquivo de configuração package.json e utilizá-los para executar comandos no terminal.
+
