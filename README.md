@@ -25,17 +25,40 @@
 <div dsplay="inline-block">
 
 <h2 align="justify">Primeira Biblioteca Node.JS</h2>
+
+&nbsp;
+
 <h2 align="justify">Feito por : Thiago Zambelli</h2>
+
+&nbsp;
+
 <h3 align="justify">Projeto feito durante a aula de -> Node.js: criando sua primeira biblioteca.</h3>
- 
+
   <a href="https://www.linkedin.com/in/thiagozambelli">
     <img width="80px" src="https://i.ibb.co/RyZx12b/linkedin.png" alt="linkedin" style="vertical-align:top;">
   </a>
 
 </div>
 
+&nbsp;
+
+> A função do projeto é criar uma biblioteca que leia arquivos `.md` e verifique se existem links no memos. Adicionalmente podemos mandar a biblioteca ferificar o status dos links (se existirem!):
+
+&nbsp;
+
+- > `node ./src/cli.js 'caminho do arquivo ou diretorio'` - ira buscar links no arquivo ou nos arquivos se for um diretorio.
+
+&nbsp;
+
+- > `node ./src/cli.js 'caminho do arquivo ou diretorio' --valida` - ira validar cada um dos links encontrados, retornanado o status dos mesmos.
+ 
+---
+
+## Somario:
 - [Projeto](#projeto)
 - [Problemas e Soluções](#problemas__solucoes)
+- [Aulas](#aulas)
+---
 
 &nbsp;
 
@@ -171,4 +194,10 @@
 - A organizar o código separando em arquivos as funções que lidam com entrada e saída de dados das funções que processam os links;
 - Como fazer estes diversos arquivos conversarem entre si através da exportação e importação de módulos com import e export;
 - Que scripts são instruções que usamos para automatizar tarefas e como escrever nossos próprios scripts, incluí-los no arquivo de configuração package.json e utilizá-los para executar comandos no terminal.
+
+## Aula 5:
+
+- Como utilizar acessar URLs com a API fetch e manipular os dados devolvidos, como o código de status HTTP;
+- Utilizar o método Promise.all para acessar de forma assíncrona um array de URLs e receber o resultado;
+- Que a API fetch é baseada no conceito de promessas em JavaScript, e nessa aula vimos como utiliza o async/await para resolver as promessas e garantir que o código seja executado de forma assíncrona, retornando os resultados.
 
